@@ -1,0 +1,7 @@
+.bio {
+  display: none;
+}
+
+.bio.open {
+  display: block;
+}
