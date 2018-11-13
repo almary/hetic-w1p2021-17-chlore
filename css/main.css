@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "Trade Gothic";
-  src: url("fonts/TradeGothic.woff") format("woff2"),
-    url("/fonts/TradeGothic.woff2") format("woff");
+  src: url("../fonts/TradeGothic.woff") format("woff2"),
+    url("../fonts/TradeGothic.woff2") format("woff");
 }
 
 body {
@@ -58,7 +58,9 @@ section:nth-of-type(3) {
 }
 
 .bag {
+  position: relative;
   max-width: 95vw;
+  height: 350px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -79,6 +81,14 @@ section:nth-of-type(3) {
   background-color: #c23c61;
 }
 
+.name {
+  position: absolute;
+  top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
 .bag-img {
   width: 90%;
 }
@@ -90,11 +100,18 @@ h2 {
 }
 
 .creator {
+  position: relative;
   text-align: center;
   font-size: 17px;
   font-weight: lighter;
   margin-top: 10px;
-  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.arrowblack {
+  position: absolute;
+  height: 15px;
+  right: 0;
 }
 
 .creator:hover {
@@ -108,4 +125,74 @@ h2 {
 
 .illustration {
   width: 90%;
+  position: relative;
+  filter: brightness(65%);
+}
+
+article:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* sale ici répétition */
+}
+
+.articledesc {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plus {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+  padding-left: 10px;
+}
+
+.icone {
+  width: 15px;
+  display: flex;
+  align-items: right;
+}
+
+.iconcontainer {
+  position: absolute;
+  width: 60%;
+  height: 50px;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
 }

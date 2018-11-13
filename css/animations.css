@@ -5,3 +5,6 @@
 .bio.open {
   display: block;
 }
+.arrowblack.open {
+  transform: rotate(180deg);
+}
