@@ -90,7 +90,8 @@ section:nth-of-type(3) {
 }
 
 .bag-img {
-  width: 90%;
+  max-height: 100%;
+  max-width: 90%;
 }
 
 h2 {
@@ -138,6 +139,7 @@ article:nth-of-type(2) {
   display: flex;
   justify-content: center;
   align-items: center; /* sale ici répétition */
+  max-width: 660px;
 }
 
 .articledesc {
