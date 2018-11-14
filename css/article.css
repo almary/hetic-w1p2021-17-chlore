@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/TradeGothic.woff") format("woff2"),
+    url("../fonts/TradeGothic.woff2") format("woff"); /* bien déclaré les font-style et weight = ? */
+}
+
+body {
+  font-family: "Trade Gothic", "Helvetica", "sans-serif";
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+header,
+header img {
+  height: 40px;
+}
+
+header {
+  width: 100%;
+  background: black;
+}
+
+header img {
+  z-index: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+main {
+  padding: 15px;
+}
+
+img:not(.logo) {
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h1,
+h3,
+p,
+iframe {
+  margin-top: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+h3 {
+  color: #7a7a7a;
+  font-size: 14px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+footer ol {
+  display: flex;
+  flex-direction: row;
+  width: 43vw;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 15px;
+  display: flex;
+  align-items: right;
+}
+
+.iconcontainer {
+  position: absolute;
+  width: 40%;
+  height: 50px;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+}

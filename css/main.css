@@ -357,7 +357,6 @@ footer ol {
     display: flex;
     flex-direction: column;
     padding-right: 60px;
-    padding-top: 15px;
   }
 
   .creator-summary img {
