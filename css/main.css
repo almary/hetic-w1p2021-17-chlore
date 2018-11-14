@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Trade Gothic";
   src: url("../fonts/TradeGothic.woff") format("woff2"),
-    url("../fonts/TradeGothic.woff2") format("woff");
+    url("../fonts/TradeGothic.woff2") format("woff"); /* bien déclaré les font-style et weight = ? */
 }
 
 body {
@@ -31,6 +31,7 @@ section:nth-of-type(1) {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -70,7 +71,7 @@ section:nth-of-type(3) {
 }
 
 .bag:nth-of-type(1) {
-  background-color: #e05218;
+  background-color: #c23c61;
 }
 
 .bag:nth-of-type(2) {
@@ -78,7 +79,8 @@ section:nth-of-type(3) {
 }
 
 .bag:nth-of-type(3) {
-  background-color: #c23c61;
+  background-color: #e05218;
+  order: -1;
 }
 
 .name {
@@ -87,6 +89,10 @@ section:nth-of-type(3) {
   font-weight: bold;
   font-size: 18px;
   color: black;
+}
+
+.bag-desktop {
+  display: none;
 }
 
 .bag-img {
@@ -109,7 +115,8 @@ h2 {
   margin-right: 20px;
 }
 
-.arrowblack {
+.arrowb {
+  /* pas possible le camel-case ici pour le JS ? */
   position: absolute;
   height: 15px;
   right: 0;
@@ -144,7 +151,6 @@ article:nth-of-type(2) {
 
 .articledesc {
   display: block;
-  float: left;
   position: absolute;
   left: 0;
   right: 0;
@@ -159,7 +165,6 @@ article:nth-of-type(2) {
 
 .plus {
   display: block;
-  float: left;
   position: absolute;
   left: 0;
   right: 0;
@@ -184,7 +189,14 @@ footer {
   padding-left: 10px;
 }
 
-.icone {
+footer ol {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-around;
+}
+
+.icon {
   width: 15px;
   display: flex;
   align-items: right;
@@ -197,4 +209,145 @@ footer {
   right: 0;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 1150px) {
+  /* changer le background de la section 1 par seulement le logo ? pour faire plus propre parceque l'image pas tpo sur pc? */
+  header {
+    display: block;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  header ol {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+
+  header li {
+    background: black;
+    padding: 5px;
+  }
+
+  /* section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  section:nth-of-type(2),
+  section:nth-of-type(3),
+  section:nth-of-type(4) {
+    position: relative;
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  section:nth-of-type(2) {
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bag {
+    position: relative;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 33vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  .bag:nth-of-type(1),
+  .bag:nth-of-type(2),
+  .bag:nth-of-type(3) {
+    background-color: white;
+  }
+
+  .bag:nth-of-type(2) {
+    order: -1;
+  }
+
+  .bag:nth-of-type(1):hover {
+    background-color: #c23c61;
+  }
+
+  .bag:nth-of-type(2):hover {
+    background-color: #e1a195;
+  }
+
+  .bag:nth-of-type(3):hover {
+    background-color: #e05218;
+  }
+
+  .bag-img {
+    display: block;
+    max-height: 100%;
+    max-width: 90%;
+  }
+
+  .creator-summary {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-top: 15px;
+  }
+
+  .creator-summary img {
+    height: 320px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .creator {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 13px;
+    font-weight: 550;
+  }
+
+  .bio:nth-of-type(1) {
+    opacity: 1;
+    max-width: 650px;
+    height: auto;
+    line-height: 20px;
+  }
+
+  .arrowb {
+    display: none;
+  }
+
+  article:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  .actu {
+    position: absolute;
+    top: 70px;
+  }
+
+  .illustration {
+    height: 300px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

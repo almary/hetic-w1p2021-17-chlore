@@ -25,7 +25,6 @@
       <nav>
         <ol>
           <li>Produits</li>
-          <li>MOSCHINO</li>
           <li>Actualités</li>
         </ol>
       </nav>
@@ -33,16 +32,10 @@
     <section>
       <img
         class="logo"
-        id="logo"
         src="images\SITE-MOSCHINO-IMAGES\Logos\Moschino_logo_black.png"
         alt="Logo moschino noir"
       />
-      <img
-        class="arrow"
-        id="arrow"
-        src="images/icones/arrow.svg"
-        alt="icone flèche"
-      />
+      <img class="arrow" src="images/icones/arrow.svg" alt="icone flèche" />
       <!-- le faire en ::after plutot ? -->
     </section>
     <section>
@@ -50,48 +43,47 @@
         <div class="name">NEW BIKER</div>
         <img
           class="bag-img"
-          id="bagimg"
           src="images/SITE-MOSCHINO-IMAGES/Flying_bag_in_calfskin/flying-bag.jpg"
           alt="Photo sac de face"
         />
       </div>
       <!-- changer les alt -->
       <div class="bag" id="bag">
-        <div class="name">HIDDEN LOCK</div>
         <img
           class="bag-img"
-          id="bagimg"
           src="images\SITE-MOSCHINO-IMAGES\Hidden_lock_in mohaire\Hidden-lock-in mohair.jpg"
           alt="Photo sac de face"
         />
+        <div class="name">HIDDEN LOCK</div>
       </div>
       <div class="bag" id="bag">
         <div class="name">FLYING BAG</div>
         <img
           class="bag-img"
-          id="bagimg"
           src="images/SITE-MOSCHINO-IMAGES/New_biker_bag_in_soft_leather_with_piping/New-biker-bag.jpg"
           alt="Photo sac de face"
         />
       </div>
     </section>
     <section>
-      <h2>LE FONDATEUR</h2>
-      <figure>
-        <img
-          src="images/SITE-MOSCHINO-IMAGES/fondateur/franco moschinod.jpeg"
-          alt="Photo de Franco Moschinod, fondateur de la marque"
-        />
-        <figcaption class="creator" id="creator">
-          Franco Moschino
+      <div class="creator-summary">
+        <h2>LE FONDATEUR</h2>
+        <figure>
           <img
-            class="arrowblack"
-            id="arrowblack"
-            src="images\icones\arrow-black.svg"
-            alt="icone fleche vers le bas"
+            src="images/SITE-MOSCHINO-IMAGES/fondateur/franco moschinod.jpeg"
+            alt="Photo de Franco Moschinod, fondateur de la marque"
           />
-        </figcaption>
-      </figure>
+          <figcaption class="creator" id="creator">
+            Franco Moschino
+            <img
+              class="arrowb"
+              id="arrowb"
+              src="images\icones\arrow-black.svg"
+              alt="icone fleche vers le bas"
+            />
+          </figcaption>
+        </figure>
+      </div>
       <p class="bio" id="bio">
         C'est en 1983 que Franco Moschino fonde la maison de création à son nom.
         L'entreprise italienne Aeffe entame alors des relations commerciales
@@ -117,13 +109,12 @@
       </p>
     </section>
     <section>
-      <h2>ACTUALITÉS</h2>
+      <h2 class="actu">ACTUALITÉS</h2>
       <article>
-        <figure class="article" id="article">
+        <figure class="article">
           <!-- changer le nom de class -->
           <img
             class="illustration"
-            id="illustration"
             src="images/SITE-MOSCHINO-IMAGES/Articles/article1.jpg"
             alt="illustration article 1"
           />
@@ -137,7 +128,6 @@
         <figure class="article" id="article">
           <img
             class="illustration"
-            id="illustration"
             src="images/SITE-MOSCHINO-IMAGES/Articles/article2.jpg"
             alt="illustration article 2"
           />
@@ -159,27 +149,27 @@
         <img
           src="images/icones/001-instagram.svg"
           alt="icone instagram"
-          class="icone"
+          class="icon"
         />
         <img
           src="images/icones/004-facebook.svg"
           alt="icone instagram"
-          class="icone"
+          class="icon"
         />
         <img
           src="images/icones/002-twitter.svg"
           alt="icone instagram"
-          class="icone"
+          class="icon"
         />
         <img
           src="images/icones/003-youtube.svg"
           alt="icone instagram"
-          class="icone"
+          class="icon"
         />
         <img
           src="images/icones/005-pinterest.svg"
           alt="icone instagram"
-          class="icone"
+          class="icon"
         />
       </div>
     </footer>
@@ -187,3 +177,5 @@
 </html>
 
 <!-- VIRER LES ID -->
+<!-- Alt des images en anglais aussi? -->
+<!-- kebab-case pour les classes -->
