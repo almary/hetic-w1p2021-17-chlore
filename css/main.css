@@ -14,8 +14,17 @@ body {
   line-height: 22px;
 }
 
-header {
+.video-wrapper {
   display: none;
+}
+
+.logo {
+  position: absolute;
+  height: 100px;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 section {
@@ -36,18 +45,9 @@ section:nth-of-type(1) {
   background-attachment: fixed;
 }
 
-.logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 20px;
-  height: 100px;
-}
-
 .arrow {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   height: 30px;
   left: 0;
   right: 0;
@@ -179,6 +179,14 @@ article:nth-of-type(2) {
   font-weight: lighter;
 }
 
+section:last-of-type {
+  padding: 0;
+}
+
+.band img {
+  width: 100%;
+}
+
 footer {
   position: relative;
   display: flex;
@@ -186,15 +194,15 @@ footer {
   height: 50px;
   background: black;
   color: white;
-  font-size: 10px;
-  line-height: 15px;
+  font-size: 12px;
   padding-left: 10px;
+  margin-top: -6px;
 }
 
 footer ol {
   display: flex;
   flex-direction: row;
-  width: 40vw;
+  width: 43vw;
   justify-content: space-around;
 }
 
@@ -206,7 +214,7 @@ footer ol {
 
 .iconcontainer {
   position: absolute;
-  width: 60%;
+  width: 40%;
   height: 50px;
   right: 0;
   display: flex;
@@ -215,27 +223,33 @@ footer ol {
 
 @media screen and (min-width: 1150px) {
   /* changer le background de la section 1 par seulement le logo ? pour faire plus propre parceque l'image pas tpo sur pc? */
-  header {
-    display: block;
-    position: absolute;
-    color: white;
-    z-index: 1;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+
+  .logo {
+    display: none;
   }
 
-  header ol {
+  .video-wrapper {
+    height: 90vh;
+    width: 90vw;
+    overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 25px;
-    margin-top: 50px;
-    font-weight: bold;
+    justify-content: center;
+    align-items: center;
   }
 
-  header li {
-    background: black;
-    padding: 5px;
+  .background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  section:nth-of-type(1) {
+    position: relative;
+    padding-top: 80px;
+    height: 100vh;
+    background: white;
   }
 
   /* section {

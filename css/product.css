@@ -124,16 +124,15 @@ footer {
   height: 50px;
   background: black;
   color: white;
-  font-size: 10px;
-  line-height: 15px;
+  font-size: 12px;
   padding-left: 10px;
-  margin-top: 50px;
+  margin-top: -6px;
 }
 
 footer ol {
   display: flex;
   flex-direction: row;
-  width: 40vw;
+  width: 43vw;
   justify-content: space-around;
 }
 
@@ -145,7 +144,7 @@ footer ol {
 
 .iconcontainer {
   position: absolute;
-  width: 60%;
+  width: 40%;
   height: 50px;
   right: 0;
   display: flex;

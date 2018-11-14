@@ -21,14 +21,6 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ol>
-          <li>Produits</li>
-          <li>Actualités</li>
-        </ol>
-      </nav>
-    </header>
     <section>
       <img
         class="logo"
@@ -36,7 +28,12 @@
         alt="Logo moschino noir"
       />
       <img class="arrow" src="images/icones/arrow.svg" alt="icone flèche" />
-      <!-- le faire en ::after plutot ? -->
+
+      <div class="video-wrapper">
+        <video autoplay muted loop id="background-video">
+          <source src="video\background.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
     <section>
       <div class="bag" id="bag">
@@ -136,6 +133,14 @@
           <div class="plus">En savoir plus</div>
         </figure>
       </article>
+    </section>
+    <section>
+      <div class="band">
+        <img
+          src="images\SITE-MOSCHINO-IMAGES\Frise_footer.png"
+          alt="frise photos mannequins moschino"
+        />
+      </div>
     </section>
     <footer>
       <nav>
