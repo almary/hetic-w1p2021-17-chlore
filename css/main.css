@@ -313,6 +313,7 @@ footer ol {
   .bag:nth-of-type(2),
   .bag:nth-of-type(3) {
     background-color: white;
+    transition: background-color 0.35s;
   }
 
   .bag:nth-of-type(2) {
@@ -379,11 +380,6 @@ footer ol {
     top: 70px;
   }
 
-  .articledesc:hover,
-  .plus:hover {
-    cursor: pointer;
-  }
-
   .illustration {
     height: 300px;
     width: auto;
@@ -394,6 +390,5 @@ footer ol {
 
   .illustration:hover {
     filter: brightness(60%) blur(2px);
-    cursor: pointer;
   }
 }

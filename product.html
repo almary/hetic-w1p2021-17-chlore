@@ -17,6 +17,12 @@
       media="screen"
       href="css/product.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/animations-product.css"
+    />
     <script defer src="js/product.js"></script>
   </head>
   <body>
@@ -31,22 +37,23 @@
     <div class="wrap">
       <div class="slider">
         <img
-          class="slide un"
+          class="slide one" id="slideone"
           src="images\moschino\hidden-lock\hidden-lock-in mohair.jpg"
           alt="photo sac hidden lock de face"
         />
+        <img class=arrow-left id ="arrowleft" src="images/icones/arrow-black.svg" alt="icone flèche noire">
         <img
-          class="slide deux"
+          class="slide two"
           src="images\moschino\hidden-lock\hidden-lock-in mohair-3.jpg"
           alt="photo sac hidden lock de trois quart"
         />
         <img
-          class="slide trois"
+          class="slide three"
           src="images\moschino\hidden-lock\hidden-lock-in mohair-1.jpg"
           alt="photo sac hidden lock de haut"
         />
         <img
-          class="slide quatre"
+          class="slide four"
           src="images\moschino\hidden-lock\hidden-loc-in mohair-2.jpg"
           alt="photo sac hidden lock porté"
         />
@@ -74,8 +81,12 @@
     <section>
       <div class="suggestion">Ils pourraient vous plaire...</div>
       <div class="sugg-img-container">
+        <figure class="swing">
         <img class="suggestion-img" src="images\moschino\flying-bag\flying-bag.jpg" alt="photo flying bag">
+        </figure>
+        <figure class="swing">
         <img class="suggestion-img" src="images\moschino\new-biker\new-biker-bag.jpg" alt="photo biker bag">
+      </figure>
       </div>
     </section>
 

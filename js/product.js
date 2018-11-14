@@ -21,3 +21,15 @@ if (window.matchMedia("(max-width: 1150px)").matches) {
     x[slideIndex - 1].style.display = "block";
   }
 }
+
+var slideone = document.getElementById("slideone");
+slideone.addEventListener("click", function() {
+  slideone.classList.toggle("is-clicked");
+  arrowleft.classList.toggle("is-clicked");
+});
+
+var arrowleft = document.getElementById("arrowleft");
+arrowleft.addEventListener("click", function() {
+  slideone.classList.toggle("is-clicked");
+  arrowleft.classList.toggle("is-clicked");
+});
