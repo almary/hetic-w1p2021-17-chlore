@@ -50,13 +50,17 @@ section:nth-of-type(1) {
   color: white;
 }
 
-.arrow {
+.arrow-mobile {
   position: absolute;
   top: 23px;
   height: 15px;
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.arrow {
+  display: none; /* ici bof les 2 arrows ? */
 }
 
 section:nth-of-type(2) {
@@ -264,7 +268,14 @@ footer ol {
     background-attachment: fixed;
   }
 
+  .discover {
+    display: none;
+  }
+
   .arrow {
+    display: block;
+    position: absolute;
+    height: 30px;
     bottom: 100px;
   }
   /* section {
