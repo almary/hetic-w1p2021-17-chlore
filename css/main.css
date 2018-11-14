@@ -93,7 +93,6 @@ section:nth-of-type(3) {
 
 .bag:nth-of-type(3) {
   background-color: #e05218;
-  order: -1;
 }
 
 .name {
@@ -134,10 +133,6 @@ h2 {
   height: 10px;
   right: 10px;
   bottom: 5px;
-}
-
-.creator:hover {
-  cursor: pointer;
 }
 
 .bio {
@@ -384,10 +379,21 @@ footer ol {
     top: 70px;
   }
 
+  .articledesc:hover,
+  .plus:hover {
+    cursor: pointer;
+  }
+
   .illustration {
     height: 300px;
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
+    transition: filter 0.2s;
+  }
+
+  .illustration:hover {
+    filter: brightness(60%) blur(2px);
+    cursor: pointer;
   }
 }
