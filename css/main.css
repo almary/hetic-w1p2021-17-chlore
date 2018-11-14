@@ -20,7 +20,7 @@ body {
 
 .logo {
   position: absolute;
-  height: 100px;
+  height: 200px;
   top: 15px;
   left: 0;
   right: 0;
@@ -44,10 +44,16 @@ section:nth-of-type(1) {
   background-position: center;
 }
 
+.discover {
+  position: relative;
+  top: 45vh;
+  color: white;
+}
+
 .arrow {
   position: absolute;
-  bottom: 10px;
-  height: 30px;
+  top: 23px;
+  height: 15px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -229,8 +235,6 @@ footer ol {
 }
 
 @media screen and (min-width: 1150px) {
-  /* changer le background de la section 1 par seulement le logo ? pour faire plus propre parceque l'image pas tpo sur pc? */
-
   .logo {
     display: none;
   }
