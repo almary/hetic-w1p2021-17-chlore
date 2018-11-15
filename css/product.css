@@ -190,6 +190,11 @@ footer ol {
   justify-content: space-around;
 }
 
+.social {
+  display: flex;
+  flex-direction: center;
+}
+
 @media screen and (min-width: 1150px) {
   body {
     text-align: left;

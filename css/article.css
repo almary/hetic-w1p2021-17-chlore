@@ -136,7 +136,17 @@ footer ol {
   justify-content: space-around;
 }
 
+.social {
+  display: flex;
+  flex-direction: center;
+}
+
 @media screen and (min-width: 1150px) {
+  a:hover,
+  .button-left:hover {
+    cursor: url(../images/icones/teddy.cur), pointer;
+  }
+
   main {
     max-width: 1000px;
   }

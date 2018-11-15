@@ -260,13 +260,14 @@ footer ol {
   justify-content: space-around;
 }
 
+.social {
+  display: flex;
+  flex-direction: center;
+}
+
 @media screen and (min-width: 1150px) {
   a:hover {
     cursor: url(../images/icones/teddy.cur), pointer;
-  }
-
-  section:nth-of-type(1) {
-    background-image: url(images\moschino\page-accueil\background-load.png);
   }
 
   .logo {
