@@ -303,19 +303,19 @@ footer ol {
   }
 
   .swing img {
-    height: 280px;
+    height: 230px;
     display: block;
   }
 
-  .swing:after {
+  .swing::after {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
     border: 1px solid #999;
-    top: -10px;
+    top: -5px;
     left: 50%;
-    z-index: 0;
+    z-index: -1;
     border-bottom: none;
     border-right: none;
     transform: rotate(45deg);
@@ -326,7 +326,7 @@ footer ol {
     position: absolute;
     width: 5px;
     height: 5px;
-    top: -14px;
+    top: -10px;
     left: 52.5%;
     z-index: 5;
     border-radius: 50% 50%;
