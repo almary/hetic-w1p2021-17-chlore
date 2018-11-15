@@ -254,6 +254,10 @@ footer ol {
 }
 
 @media screen and (min-width: 1150px) {
+  a:hover {
+    cursor: url(../images/icones/teddy.cur), pointer;
+  }
+
   .logo {
     display: none;
   }
