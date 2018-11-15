@@ -222,6 +222,10 @@ section:last-of-type {
   bottom: 0;
 }
 
+.easter-egg {
+  display: none;
+}
+
 footer {
   position: relative;
   display: flex;
@@ -441,6 +445,7 @@ footer ol {
   }
 
   .easter-egg {
+    display: block;
     position: absolute;
     top: 25.8%;
     opacity: 0;
