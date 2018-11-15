@@ -321,8 +321,21 @@ footer ol {
     transform: rotate(45deg);
   }
 
+  .swing:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 52.5%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+  }
+
   .swing:after,
-  .suggestion-img {
+  .suggestion-img,
+  .swing:before {
     margin-top: 50px;
   }
 }
