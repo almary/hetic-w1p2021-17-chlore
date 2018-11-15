@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "Trade Gothic";
-  src: url("../fonts/TradeGothic.woff") format("woff2"),
-    url("../fonts/TradeGothic.woff2") format("woff"); /* bien déclaré les font-style et weight = ? */
+  src: url("../fonts/TradeGothic.woff") format("woff"),
+    url("../fonts/TradeGothic.woff2") format("woff2");
 }
 
 body {
