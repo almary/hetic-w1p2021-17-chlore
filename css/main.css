@@ -265,6 +265,10 @@ footer ol {
     cursor: url(../images/icones/teddy.cur), pointer;
   }
 
+  section:nth-of-type(1) {
+    background-image: url(images\moschino\page-accueil\background-load.png);
+  }
+
   .logo {
     display: none;
   }
@@ -442,9 +446,6 @@ footer ol {
 
   .band {
     position: relative;
-  }
-
-  .band-img {
   }
 
   .easter-egg {
