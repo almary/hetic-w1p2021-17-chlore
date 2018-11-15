@@ -126,3 +126,9 @@ document.querySelector(".arrow").addEventListener("click", () => {
     console.log(`Just finished scrolling to ${window.pageYOffset}px`)
   );
 });
+
+document.querySelector(".discover").addEventListener("click", () => {
+  scrollIt(document.querySelector(".section2"), 400, "easeOutQuad", () =>
+    console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+  );
+});
