@@ -285,6 +285,10 @@ footer ol {
     bottom: 0;
   }
 
+  .suggestion {
+    font-size: 22px;
+  }
+
   .suggestion-img {
     margin-right: 40px;
     margin-left: 40px;
