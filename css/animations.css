@@ -17,3 +17,11 @@
 .arrowb.is-open {
   transform: rotate(180deg);
 }
+
+.illustration {
+  transition: transform 0.3s;
+}
+
+.illustration:hover {
+  transform: scale(1.1);
+}

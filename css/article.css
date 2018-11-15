@@ -123,9 +123,9 @@ footer ol {
   }
 
   iframe {
-    left: 0;
-    right: 0;
+    display: block;
     margin: 0 auto;
+    padding: 30px;
   }
 
   p {
@@ -134,14 +134,17 @@ footer ol {
   }
 
   img:not(.logo) {
-    height: 350px;
-    padding: 10px;
-    border: purple 2px solid;
+    float: left;
+    max-width: 400px;
+    padding-right: 15px;
   }
 
-  .wrap-row {
-    display: flex;
-    flex-direction: row;
-    border: red 2px solid;
+  .iconcontainer img {
+    padding: 0;
+  }
+
+  img:nth-of-type(even) {
+    float: right;
+    padding-left: 15px;
   }
 }
