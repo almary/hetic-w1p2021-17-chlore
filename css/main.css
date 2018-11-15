@@ -180,7 +180,7 @@ article:nth-of-type(2) {
   display: flex;
   justify-content: center;
   align-items: center; /* sale ici répétition */
-  max-width: 660px;
+  max-width: 400px;
 }
 
 .articledesc {
@@ -294,7 +294,7 @@ footer ol {
   .arrow {
     display: block;
     position: absolute;
-    height: 30px;
+    height: 50px;
     bottom: 0px;
   }
 
@@ -404,6 +404,10 @@ footer ol {
 
   .arrowb {
     display: none;
+  }
+
+  .article {
+    max-width: 660px;
   }
 
   article:nth-of-type(2) {

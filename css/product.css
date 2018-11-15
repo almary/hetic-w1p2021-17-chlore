@@ -105,7 +105,6 @@ header img {
   margin-left: 7%;
   margin-right: 7%; /* ca c'est egal à la section 2 mais ça marche pas ? */
   margin-top: 22px;
-  text-align: justify;
 }
 
 .title {
@@ -236,8 +235,8 @@ footer ol {
     position: absolute;
     z-index: 1;
     transform: rotate(-90deg);
-    height: 30px;
-    left: 10px;
+    height: 40px;
+    left: 20px;
   }
 
   .slide.one {
