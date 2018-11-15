@@ -17,7 +17,8 @@ body {
 
 header,
 header img {
-  height: 40px;
+  height: 80px;
+  position: relative;
 }
 
 header {
@@ -44,7 +45,6 @@ main {
 img:not(.logo) {
   max-width: 100%;
   padding-top: 15px;
-  padding-bottom: 10px;
 }
 
 h1,
@@ -55,8 +55,26 @@ iframe {
 }
 
 h1 {
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.button-left {
+  position: absolute;
+  background: white;
+  left: 0px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
 }
 
 h2 {
@@ -122,6 +140,14 @@ footer ol {
     max-width: 1000px;
   }
 
+  .button-left {
+    left: 50px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
   iframe {
     display: block;
     margin: 0 auto;
@@ -129,7 +155,8 @@ footer ol {
   }
 
   p {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
   }
 
